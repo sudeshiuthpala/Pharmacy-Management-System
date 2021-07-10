@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Customer Update</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/bootstrap/css/delete.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="<?php echo base_url(); ?>bootstap/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  </head>
+  </head>
+  <body>
+    <div class="container delete">
+      <center><h1>Loyalty Customers Update</h1></center>
+      <form class="" action="" method="post">
+        <table border="0" align="center">
+
+          <tr>
+            <td>Enter Customer ID :</td>
+            <td><input type="text" name="id"></td>
+          </tr>
+          <tr>
+            <td>Select Field :</td>
+            <td>       <select name="field">
+                      <option value="name">Name</option>
+                      <option value="DOB">Date Of Birth</option>
+                      <option value="gender">Gender</option>
+                      <option value="contact_num">Contact Number</option>
+                      <option value="email">E-mail</option>
+                    </select>
+          </td>
+          <tr>
+            <td>Data :</td>
+            <td><input type="text" name="data"></td>
+          </tr>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" name="update" value="Update"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+  </body>
+</html>

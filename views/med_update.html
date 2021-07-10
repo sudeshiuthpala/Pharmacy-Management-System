@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Medicine Update</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/bootstrap/css/delete.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="<?php echo base_url(); ?>bootstap/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  </head>
+  </head>
+  <body>
+    <div class="container delete">
+      <form class="" action="" method="post">
+        <center><h1>Medicine Update</h1></center>
+        <table border="0" align="center">
+
+          <tr>
+            <td>Enter Medicine ID :</td>
+            <td><input type="text" name="id"></td>
+          </tr>
+          <tr>
+            <td>Select Field :</td>
+            <td>       <select name="field">
+                      <option value="med_name">Medicine Name</option>
+                      <option value="med_des">Medicine Description</option>
+                      <option value="unit_price">Unit Price</option>
+                      <option value="quantity">Quantity</option>
+                      <option value="purchased_date">Purchased Date</option>
+                      <option value="exp_date">Expired Date</option>
+                    </select>
+          </td>
+          </tr>
+          <tr>
+            <td>Data :</td>
+            <td><input type="text" name="data"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" name="update" value="Update"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+  </body>
+</html>
